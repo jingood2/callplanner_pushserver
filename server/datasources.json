@@ -1,0 +1,21 @@
+{
+  "db": {
+    "connector": "mongodb",
+    "url": "mongodb://demo:L00pBack@demo.strongloop.com/demo"
+  },
+  "mongoDs": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "push_db",
+    "name": "mongoDs",
+    "connector": "mongodb",
+    "user": "callPlanner"
+  },
+  "push": {
+    "name": "push",
+    "connector": "loopback-component-push",
+    "installation": "installation",
+    "notification": "notification",
+    "application": "application"
+  }
+}
