@@ -1,11 +1,7 @@
 {
-  "name": "loopback-demo-push",
+  "name": "push-server",
   "version": "0.0.0",
   "main": "server/server.js",
-  "scripts": {
-    "install": "bower install",
-    "start": "node ."
-  },
   "dependencies": {
     "body-parser": "^1.12.4",
     "compression": "^1.4.3",
@@ -14,6 +10,7 @@
     "loopback-boot": "^2.6.5",
     "loopback-component-push": "^1.4.4",
     "loopback-connector-mongodb": "^1.8.0",
+		"loopback-datasource-juggler": "^2.19.0",
     "serve-favicon": "^2.2.0"
   },
   "optionalDependencies": {
@@ -21,5 +18,17 @@
   },
   "devDependencies": {
     "bower": "^1.4.1"
-  }
+  },
+  "bundleDependencies": [
+    "body-parser",
+    "compression",
+    "errorhandler",
+    "loopback",
+    "loopback-boot",
+    "loopback-component-push",
+    "loopback-connector-mongodb",
+		"loopback-datasource-juggler",
+    "loopback-explorer",
+    "serve-favicon"
+  ]
 }
