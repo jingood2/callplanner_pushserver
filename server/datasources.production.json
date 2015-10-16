@@ -1,6 +1,10 @@
 {
   "db": {
-    "connector": "memory"
+    "host": "callplannerapp_mongodb_1",
+    "port": 27017,
+    "database": "push_db",
+    "connector": "mongodb",
+    "user": "callPlanner"
   },
   "push": {
     "name": "push",

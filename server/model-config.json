@@ -6,6 +6,7 @@
     ]
   },
   "User": {
+    "public": false,
     "dataSource": "db"
   },
   "AccessToken": {
@@ -26,15 +27,15 @@
   },
   "application": {
     "public": true,
-    "dataSource": "mongoDs"
+    "dataSource": "db"
   },
   "installation": {
     "public": true,
-    "dataSource": "mongoDs"
+    "dataSource": "db"
   },
   "notification": {
     "public": true,
-    "dataSource": "mongoDs"
+    "dataSource": "db"
   },
   "push": {
     "public": true,
