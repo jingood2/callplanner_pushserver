@@ -15,26 +15,24 @@ module.exports = function (app) {
 			if(req.body.type == 'accept') {
 				var noti = new Notification({
 					title: req.body.title,
-					message: "Please confirm you can attend conference",
+					message: "Please select how to join ",
 				    planId: req.body.planId,
 					tel: req.body.tel,
 					type: req.body.type,
                     actions: [
-                        { icon: "no", title: "No", callback: "/"},
-                        { icon: "yes", title: "Yes", callback: "/" },
-                        { icon: "help", title: "Pending", callback: "/"}
+												{ icon: "no", title: "Call", callback: "tab.no" },
+												{ icon: "yes", title: "Take", callback: "tab.yes" }
                   ]
 
 				}); 	
 			} else {
 				var noti = new Notification({
-        	title: req.body.title,
-        	message: "Launch Conference now! ",
+        	        title: req.body.title,
+        	        message: "Launch Conference now! ",
+                    image: "www/image/logo.png",
 					type: req.body.type,
 					planId : req.body.planId,
-					style: "picture",
-					picture: "http://36.media.tumblr.com/c066cc2238103856c9ac506faa6f3bc2/tumblr_nmstmqtuo81tssmyno1_1280.jpg",
-    			summaryText: "Launch Conference now!"
+                    conferenceNum : req.body.conferenceNum
 				});
 
 			}
