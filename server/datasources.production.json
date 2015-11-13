@@ -1,6 +1,6 @@
 {
   "db": {
-    "host": "docker_mongodb_1",
+    "host": "docker_db_1",
     "port": 27017,
     "database": "push_db",
     "connector": "mongodb",
